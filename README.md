@@ -3,7 +3,7 @@
 Requires at least: WordPress 3.2
 Tested up to: 5.6
 License: GNU GPLv3 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License URI: [Cherry Plaza License](https://github.com/Danycraft98/Cherry-Plaza/blob/main/LICENSE)
 Tags: blog, ecommerce, post-formats, theme-options, menus
 
 == Description ==
@@ -22,7 +22,7 @@ For more information about Cherry Plaza please go to [Cherry Plaza Wiki](https:/
 
 == Copyright ==
 
-Cherry Plaza WordPress Theme, Copyright 2011-2021 WordPress.org & Automattic.com
+Cherry Plaza WordPress Theme, Copyright 2021 Danycraf98
 Cherry Plaza is Distributed under the terms of the GNU GPL
 
 This program is free software: you can redistribute it and/or modify
@@ -38,7 +38,7 @@ GNU General Public License for more details.
 Cherry Plaza Theme bundles the following third-party resources:
 
 HTML5 Shiv v3.7.0, Copyright 2020 Danycraft98
-Licenses: MIT/GPL2
+Licenses: MIT/GPL3
 Source: [Cherry Plaza GitHub](https://github.com/danycraft98/Cherry-Plaza)
 
 == Changelog ==
