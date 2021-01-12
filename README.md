@@ -1,4 +1,4 @@
-=== Twenty Eleven ===
+=== Cherry Plaza ===
 
 Requires at least: WordPress 3.2
 Tested up to: 5.6
@@ -10,7 +10,7 @@ Tags: blog, ecommerce, post-formats, theme-options, menus
 
 The Cherry Plaza theme for WordPress is sophisticated, lightweight, and adaptable. Make it yours with a custom menu, header image, and background -- then go further with available theme options for light or dark color scheme, custom link colors, and three layout choices. Cherry Plaza comes equipped with a Showcase page template that transforms your front page into a showcase to show off your best content, widget support galore (sidebar, three footer areas, and a Showcase page widget area), and a custom "Ephemera" widget to display your Aside, Link, Quote, or Status posts. Included are styles for print and for the admin editor, support for featured images (as custom header images on posts and pages and as large images on featured "sticky" posts), and special styles for six different post formats.
 
-For more information about Cherry Plaza please go to ?.
+For more information about Cherry Plaza please go to [Cherry Plaza Wiki](https://github.com/Danycraft98/Cherry-Plaza/wiki).
 
 == Installation ==
 
@@ -22,8 +22,8 @@ For more information about Cherry Plaza please go to ?.
 
 == Copyright ==
 
-Twenty Eleven WordPress Theme, Copyright 2011-2021 WordPress.org & Automattic.com
-Twenty Eleven is Distributed under the terms of the GNU GPL
+Cherry Plaza WordPress Theme, Copyright 2011-2021 WordPress.org & Automattic.com
+Cherry Plaza is Distributed under the terms of the GNU GPL
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -35,11 +35,11 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
-Twenty Eleven Theme bundles the following third-party resources:
+Cherry Plaza Theme bundles the following third-party resources:
 
-HTML5 Shiv v3.7.0, Copyright 2014 Alexander Farkas
+HTML5 Shiv v3.7.0, Copyright 2020 Danycraft98
 Licenses: MIT/GPL2
-Source: https://github.com/danycraft98/?
+Source: [Cherry Plaza GitHub](https://github.com/danycraft98/Cherry-Plaza)
 
 == Changelog ==
 
