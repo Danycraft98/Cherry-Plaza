@@ -1,0 +1,86 @@
+/**
+ * Theme Name: Cherry Plaza
+ * Theme URI: https://wordpress.org/themes/cherry-plaza/ (None)
+ * Author: Danycraft98
+ * Author URI: https://author/ (None)
+ * Version: 1.0
+ * Description: The Cherry Plaza theme for WordPress is sophisticated, lightweight, and adaptable. Make it yours with a custom menu, header image, and background -- then go further with available theme options for light or dark color scheme, custom link colors, and three layout choices. Cherry Plaza comes equipped with a Showcase page template that transforms your front page into a showcase to show off your best content, widget support galore (sidebar, three footer areas, and a Showcase page widget area), and a custom "Ephemera" widget to display your Aside, Link, Quote, or Status posts. Included are styles for print and for the admin editor, support for featured images (as custom header images on posts and pages and as large images on featured "sticky" posts), and special styles for six different post formats.
+ * Requires PHP: 7.0
+ * License: GNU General Public License v3 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * Tags: blog, ecommerce, post-formats, theme-options, menus
+ * Text Domain: cherryplaza
+ */
+
+
+html, body {
+    min-height: 100%;
+}
+
+.arrow-pad {
+    width: 2%;
+}
+
+.arrow-prev-btn {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+}
+
+.arrow-next-btn {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+}
+
+.cke_combo_button {
+    background-color: white !important;
+}
+
+.cke_top {
+    background-color: #6FA1A5;
+}
+
+.col-custom-1 {
+    flex: 0 0 auto;
+    max-width: 12.5%;
+}
+
+
+.col-custom-4 {
+    flex: 0 0 auto;
+    max-width: 27%;
+}
+
+.dataTables_wrapper .row .col-md-7 {
+    display: flex !important;
+}
+
+.dataTables_paginate {
+    margin-left: auto !important;
+}
+
+.floating-label-group {
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.floating-label-group .floating-label {
+    color: #cccccc;
+    position: absolute;
+    pointer-events: none;
+    top: 9px;
+    left: 12px;
+    transition: all 0.1s ease;
+}
+
+.grp-tools {
+    display: none;
+}
+
+input:focus ~ .floating-label,
+input:not(:focus):valid ~ .floating-label {
+    top: -15px;
+    bottom: 0;
+    left: 0;
+    font-size: 11px;
+    opacity: 1;
+    color: #404040;
+}
