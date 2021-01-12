@@ -25,7 +25,7 @@ This program is free software: you can redistribute it and/or modify it under th
 Cherry Plaza Theme bundles the following third-party resources:
 
 HTML5 Shiv v3.7.0, Copyright 2020 Danycraft98
-Licenses: [GNU GPL3+](https://github.com/Danycraft98/Cherry-Plaza/License.md)
+Licenses: [GNU GPL3+](https://github.com/Danycraft98/Cherry-Plaza/blob/main/LICENSE)
 Source: [Cherry Plaza GitHub](https://github.com/Danycraft98/Cherry-Plaza)
 
 ## Changelog
