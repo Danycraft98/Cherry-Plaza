@@ -7,6 +7,6 @@
 
     <?php wp_head(); ?>
 
-    <title>Cherry Plaza</title>
+    <title><?php get_bloginfo(); ?></title>
 </head>
 <body class='bg-light'>

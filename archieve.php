@@ -6,11 +6,10 @@
 
 <?php get_header(); ?>
 
-<div class='app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar'>
+<div class='app-container app-theme-white body-tabs-shadow fixed-header'>
     <?php get_template_part('includes/section', 'navbar'); ?>
 
     <div class='app-main'>
-        <?php get_template_part('includes/section', 'sidebar'); ?>
 
         <div class='app-main__outer'>
             <?php get_template_part('includes/section', 'posts'); ?>

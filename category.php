@@ -3,13 +3,21 @@
  * Template Name: Category
  */
 
-get_header(); ?>
+get_header();
 
-<div class='app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar'>
-    <?php get_template_part('includes/section', 'navbar'); ?>
+echo "<div class='app-container app-theme-white fixed-header";
+if( have_posts() ):
+    echo "fixed-sidebar";
+endif;
+echo "'>";
+
+    get_template_part('includes/section', 'navbar'); ?>
 
     <div class='app-main'>
-        <?php get_template_part('includes/section', 'sidebar'); ?>
+
+        <?php if( have_posts() ):
+            get_template_part('includes/section', 'sidebar');
+        endif; ?>
 
         <div class='app-main__outer'>
             <?php get_template_part('includes/section', 'posts'); ?>

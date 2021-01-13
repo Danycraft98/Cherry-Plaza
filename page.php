@@ -3,20 +3,28 @@
  * Template Name: Page
  */
 
-get_header(); ?>
+get_header();
 
-<div class='app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar'>
-    <?php get_template_part('includes/section', 'navbar'); ?>
+echo "<div class='app-container app-theme-white fixed-header";
+if( have_posts() ):
+    echo "fixed-sidebar";
+endif;
+echo "'>";
 
-    <div class='app-main'>
-        <?php get_template_part('includes/section', 'sidebar'); ?>
+    get_template_part('includes/section', 'navbar'); ?>
 
-        <div class='app-main__outer'>
-            <?php get_template_part('includes/section', 'content'); ?>
+        <div class='app-main'>
 
-            <?php get_template_part('includes/section', 'footer'); ?>
+            <?php if( have_posts() ):
+                get_template_part('includes/section', 'sidebar');
+            endif; ?>
+
+            <div class='app-main__outer'>
+                <?php get_template_part('includes/section', 'content'); ?>
+
+                <?php get_template_part('includes/section', 'footer'); ?>
+            </div>
         </div>
     </div>
-</div>
 
 <?php get_footer(); ?>
