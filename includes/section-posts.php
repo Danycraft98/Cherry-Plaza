@@ -9,11 +9,9 @@
                 <div>
                     Category: <?php single_cat_title(); ?>
                     <div class='page-title-subheading'>
-                        <?php
-                        // Display optional category description
-                         if ( category_description() ) : ?>
-                            <?php echo category_description(); ?>
-                        <?php endif; ?>
+                        <?php if ( category_description() ) :
+                            echo category_description();
+                        endif; ?>
                     </div>
                 </div>
             </div>
@@ -22,7 +20,7 @@
 
     <div class='card mb-4'>
         <?php if( have_posts() ): while( have_posts() ): the_post(); ?>
-            
+
             <div class='card-body border-top border-bottom'>
                 <div id="content" role="main">
                     <h2>
@@ -31,10 +29,10 @@
                     <small>
                         <?php the_time('l, F jS, Y') ?> by <?php the_author_posts_link() ?>
                     </small>
-                     
+
                     <div class="entry">
                         <?php the_excerpt(); ?>
-                     
+
                         <p class="postmetadata">
                             <?php comments_popup_link( 'No comments yet', '1 comment', '% comments', 'comments-link', 'Comments closed');
                         ?>
@@ -42,7 +40,7 @@
                     </div>
                 </div>
             </div>
-            
+
         <?php endwhile;else: ?>
 
             <div class='card-body border-top border-bottom'>
