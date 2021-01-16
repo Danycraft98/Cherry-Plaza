@@ -14,9 +14,7 @@
                         <div class='page-title-subheading'>
                             <div class='breadcrumbs'>
                                 <?php
-                                    if ( is_singular( 'product' ) ):
-                                        
-                                    else:
+                                    if ( !is_singular( 'product' ) ):
                                         the_author_posts_link();
                                     endif;
                                 ?>
@@ -27,11 +25,7 @@
 
                 <div class='page-title-actions'>
                     <div class='mr-3'>
-                        <?php
-                            if ( is_singular( 'product' ) ):
-                                
-                            else:
-                        ?>
+                        <?php if ( !is_singular( 'product' ) ): ?>
                         Updated on: <?php the_time('l, F jS, Y');endif; ?>
                     </div>
                 </div>
@@ -102,6 +96,6 @@
                 </div>
             <?php endif; ?>
     </div>
-<?php endwhile; else: endif; ?>
+<?php endwhile; endif; ?>
 
         

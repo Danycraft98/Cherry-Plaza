@@ -6,18 +6,17 @@
 get_header();
 
 echo "<div class='app-container app-theme-white fixed-header";
-if( have_posts() ):
+/*if( have_posts() ):
     echo "fixed-sidebar";
-endif;
+endif;*/
 echo "'>";
-
     get_template_part('includes/section', 'navbar'); ?>
 
         <div class='app-main'>
 
-            <?php if( have_posts() ):
+            <?php /*if( have_posts() ):
                 get_template_part('includes/section', 'sidebar');
-            endif; ?>
+            endif;*/ ?>
 
             <div class='app-main__outer'>
                 <?php get_template_part('includes/section', 'content'); ?>
@@ -25,6 +24,8 @@ echo "'>";
                 <?php get_template_part('includes/section', 'footer'); ?>
             </div>
         </div>
-    </div>
 
-<?php get_footer(); ?>
+<?php
+    echo "</div>";
+    get_footer();
+?>

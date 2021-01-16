@@ -25,7 +25,7 @@
 
         <?php the_content(); ?>
 
-    <?php endwhile; else: endif; ?>
+    <?php endwhile; endif; ?>
 
 </div>
 

@@ -1,16 +1,17 @@
 <?php
-/**
- * Template Name: Cherry Plaza
- */
+    /**
+     * Template Name: Cherry Plaza
+     */
 
-global $current_user; ?>
+    global $current_user;
+?>
 
 <div class='app-header bg-primary'>
     <div class='app-header__logo'>
         <a class='my-auto navbar-brand' href='<?php echo get_home_url() ?>'>
             <?php if (function_exists('the_custom_logo')):
                 the_custom_logo();
-                echo "<h2 class='text-white my-auto'>" . get_bloginfo(). "</h2>";
+                echo "<h2 class='text-white my-auto'>" . get_bloginfo() . "</h2>";
             endif; ?>
         </a>
     </div>
@@ -46,8 +47,8 @@ global $current_user; ?>
                             <i class='fa fw fa-search'></i>
                         </button>
                     </div>
-                    <button type='button' class='close btn btn-default text-white'>
-                        <i class='fa fw fa-plus'></i><h4>+</h4>
+                    <button type='button' class='close btn btn-default text-white h4'>
+                        <i class='fa fw fa-plus'></i>+
                     </button>
                 </div>
             </form>
@@ -71,13 +72,13 @@ global $current_user; ?>
                        aria-haspopup='true' aria-expanded='false'>
                         <?php echo get_avatar($current_user->ID, 40); ?>
                         <div class='ml-2 my-2'>
-                            Hello,<br/><?php echo $current_user->user_login ?>
+                            Hello,<br/><?php echo get_name($current_user); ?>
                             <i class='fa fa-angle-down ml-2 opacity-8'></i>
                         </div>
                     </a>
 
                     <div tabindex='-1' role='menu' aria-hidden='true'
-                         class='rm-pointers dropdown-menu-lg dropdown-menu dropdown-menu-right'>
+                         class='rm-pointers dropdown-menu'>
                         <div class='dropdown-menu-header'>
                             <div class='dropdown-menu-header-inner bg-info'>
                                 <div class='menu-header-image opacity-2'></div>
@@ -89,9 +90,9 @@ global $current_user; ?>
                                             </div>
                                             <div class='widget-content-left'>
                                                 <div class='widget-heading'>
-                                                    <?php echo $current_user->user_login ?>
+                                                    <?php echo get_name($current_user); ?>
                                                 </div>
-                                                <div class='widget-subheading opacity-8'>A short profile description
+                                                <div class='widget-subheading opacity-8'>Status: ?
                                                 </div>
                                             </div>
                                             <div class='widget-content-right mr-2'>
@@ -108,38 +109,43 @@ global $current_user; ?>
 
                         <div class='scroll-area-xs' style='height: 150px;'>
                             <div class='scrollbar-container ps'>
-                                <ul class='nav flex-column'>
-                                    <li class='nav-item-header nav-item'>Activity</li>
+                                <div class='nav flex-column'>
+                                    <div class='nav-item-header nav-item'>
+                                        Activity
+                                    </div>
 
-                                    <li class='nav-item'>
-                                        <a href='' class='nav-link text-secondary'>
+                                    <div class='nav flex-row'>
+                                        <a class='nav-item nav-link text-secondary' href=''>
                                             Return & Orders
                                             <div class='ml-auto badge badge-pill badge-info'>8</div>
                                         </a>
-                                    </li>
 
-                                    <li class='nav-item'>
-                                        <a href='<?php echo wc_get_cart_url(); ?>' class='nav-link text-secondary'>
+                                        <a class='nav-item nav-link text-secondary'
+                                           href='<?php echo wc_get_cart_url(); ?>'>
                                             <i class='fa fas fa-shopping-cart'></i>Cart
                                             <div class='ml-auto badge badge-pill badge-info'>8</div>
                                         </a>
-                                    </li>
+                                    </div>
 
-                                    <li class="dropdown-divider"></li>
+                                    <div class="dropdown-divider"></div>
 
-                                    <li class='nav-item-header nav-item'>My Account
-                                    </li>
-                                    <li class='nav-item'>
-                                        <a class='nav-link text-secondary' href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('My Account',''); ?>">
+                                    <div class='nav-item-header nav-item'>
+                                        My Account
+                                    </div>
+
+                                    <div class='nav flex-row'>
+                                        <a class='nav-item nav-link text-secondary'
+                                           href="<?php echo get_permalink(get_option('woocommerce_myaccount_page_id')); ?>"
+                                           title="<?php _e('My Account', ''); ?>">
                                             Profile
                                         </a>
-                                    </li>
-                                    <li class='nav-item'>
-                                        <a href='<?php echo esc_url(wp_lostpassword_url()); ?>' class='nav-link text-secondary'>
+
+                                        <a class='nav-item nav-link text-secondary'
+                                           href='<?php echo esc_url(wp_lostpassword_url()); ?>'>
                                             Recover Password
                                         </a>
-                                    </li>
-                                </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

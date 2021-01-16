@@ -25,6 +25,8 @@ echo "'>";
             <?php get_template_part('includes/section', 'footer'); ?>
         </div>
     </div>
-</div>
 
-<?php get_footer(); ?>
+<?php
+    echo "</div>";
+    get_footer();
+?>
