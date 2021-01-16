@@ -1,17 +1,17 @@
 <?php
-/**
- * Template Name: Woocommerce Category
- */
+    /**
+     * Template Name: Woocommerce Category
+     */
 
-defined( 'ABSPATH' ) || exit;
+    defined( 'ABSPATH' ) || exit;
 
-global $product;
+    global $product;
 
-// Ensure visibility.
-if ( empty( $product ) || ! $product->is_visible() ) {
-    return;
-}
-?>
-<li <?php wc_product_class( '', $product ); ?>>
-    <?php do_action( 'shop_loop_item' ); ?>
-</li>
+    // Ensure visibility.
+    if ( empty( $product ) || ! $product->is_visible() ) {
+        return;
+    }
+
+    echo '<li ';
+    wc_product_class( '', $product);
+    echo do_action( 'shop_loop_item' ) . '</li>';
